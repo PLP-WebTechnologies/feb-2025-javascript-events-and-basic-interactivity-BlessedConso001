@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JS Event Assignment</h1>
+
+  <!-- Event Handling -->
+  <button id="magicButton">Click Me</button>
+  <p id="buttonResult"></p>
+
+  <div id="hoverBox">Hover over me!</div>
+
+  <input type="text" id="keyInput" placeholder="Type something...">
+  <p id="keyOutput"></p>
+
+  <div id="secretAction" style="margin-top: 20px; padding: 10px; border: 1px dashed #000;">
+    Double-click me for a secret!
+  </div>
+
+  <!-- Tabs -->
+  <div style="margin-top: 30px;">
+    <button class="tablink" onclick="openTab('Tab1')">Tab 1</button>
+    <button class="tablink" onclick="openTab('Tab2')">Tab 2</button>
+
+    <div id="Tab1" class="tabcontent">
+      <h3>Tab 1</h3>
+      <p>Content for Tab 1.</p>
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+      <h3>Tab 2</h3>
+      <p>Content for Tab 2.</p>
+    </div>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/25306352/pexels-photo-25306352/free-photo-of-lush-forests-in-remote-areas-of-tasikmalaya.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="gallery-img" alt="Sample 1">
+    <img src="https://images.pexels.com/photos/20665767/pexels-photo-20665767/free-photo-of-trees-and-buildings-in-city.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="gallery-img" alt="Sample 2">
+    <img src="https://images.pexels.com/photos/7835740/pexels-photo-7835740.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="gallery-img" alt="Sample 3">
+  </div>
+
+  <!-- Form -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password (min 8 characters)" required>
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
